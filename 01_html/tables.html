@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1" width="60%" cellpadding="10" cellspacing="10">
+      <!--border artık tercih edilmiyor görmek amaçlı kullanılmıştır-->
+      <!-- cellpadding köşelerle olan mesfe arttırılıyor -->
+      <!-- cellspacing hücreler arasındaki mesafeyi artttırıyor -->
+      <thead>
+        <th>id</th>
+        <th>ürün</th>
+        <th>fiyat</th>
+        <th>resim</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>iphone 14</td>
+          <td rowspan="2">30000</td>
+          <!--1 ile 2 nin fiyatları aynı olduğu için fiyatlarını birleştirdim-->
+          <td>1.jpg</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>iphone 15</td>
+          <td>2.jpg</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>iphone 16</td>
+          <td colspan="2">40000 - 3.jpg</td>
+          <!--yanyana olan satırı birleştirdim-->
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
